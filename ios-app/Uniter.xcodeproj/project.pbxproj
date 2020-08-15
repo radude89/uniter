@@ -1,0 +1,527 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F7300B5424E2A54C00C7EE48 /* UniterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7300B5324E2A54C00C7EE48 /* UniterApp.swift */; };
+		F7300B5624E2A54C00C7EE48 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7300B5524E2A54C00C7EE48 /* ContentView.swift */; };
+		F7300B5824E2A54C00C7EE48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7300B5724E2A54C00C7EE48 /* Assets.xcassets */; };
+		F7300B5B24E2A54C00C7EE48 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7300B5A24E2A54C00C7EE48 /* Preview Assets.xcassets */; };
+		F744E44F24E8262A0002F6C1 /* Meetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F744E44E24E8262A0002F6C1 /* Meetup.swift */; };
+		F744E45124E8269A0002F6C1 /* Participant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F744E45024E8269A0002F6C1 /* Participant.swift */; };
+		F744E45524E828730002F6C1 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F744E45424E828730002F6C1 /* DataLoader.swift */; };
+		F744E45724E83F6B0002F6C1 /* MeetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F744E45624E83F6B0002F6C1 /* MeetupView.swift */; };
+		F744E45924E846D50002F6C1 /* ParticipantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F744E45824E846D50002F6C1 /* ParticipantView.swift */; };
+		F744E46124E84FD80002F6C1 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F744E46024E84FD80002F6C1 /* WidgetKit.framework */; };
+		F744E46324E84FD80002F6C1 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F744E46224E84FD80002F6C1 /* SwiftUI.framework */; };
+		F744E46624E84FD80002F6C1 /* UniterWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F744E46524E84FD80002F6C1 /* UniterWidget.swift */; };
+		F744E46824E84FD90002F6C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F744E46724E84FD90002F6C1 /* Assets.xcassets */; };
+		F744E46C24E84FD90002F6C1 /* UniterWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F744E45E24E84FD80002F6C1 /* UniterWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F7E6A5E424E8510E00879A16 /* Meetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F744E44E24E8262A0002F6C1 /* Meetup.swift */; };
+		F7E6A5E524E8525300879A16 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F744E45424E828730002F6C1 /* DataLoader.swift */; };
+		F7E6A5E624E858C600879A16 /* Participant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F744E45024E8269A0002F6C1 /* Participant.swift */; };
+		F7E6A5E724E859CB00879A16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7300B5724E2A54C00C7EE48 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F744E46A24E84FD90002F6C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F7300B4824E2A54C00C7EE48 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F744E45D24E84FD80002F6C1;
+			remoteInfo = UniterWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F744E47024E84FD90002F6C1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F744E46C24E84FD90002F6C1 /* UniterWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F7300B5024E2A54C00C7EE48 /* Uniter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Uniter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7300B5324E2A54C00C7EE48 /* UniterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniterApp.swift; sourceTree = "<group>"; };
+		F7300B5524E2A54C00C7EE48 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F7300B5724E2A54C00C7EE48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F7300B5A24E2A54C00C7EE48 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F7300B5C24E2A54C00C7EE48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F744E44E24E8262A0002F6C1 /* Meetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meetup.swift; sourceTree = "<group>"; };
+		F744E45024E8269A0002F6C1 /* Participant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Participant.swift; sourceTree = "<group>"; };
+		F744E45424E828730002F6C1 /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
+		F744E45624E83F6B0002F6C1 /* MeetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetupView.swift; sourceTree = "<group>"; };
+		F744E45824E846D50002F6C1 /* ParticipantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipantView.swift; sourceTree = "<group>"; };
+		F744E45E24E84FD80002F6C1 /* UniterWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = UniterWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F744E46024E84FD80002F6C1 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		F744E46224E84FD80002F6C1 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		F744E46524E84FD80002F6C1 /* UniterWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniterWidget.swift; sourceTree = "<group>"; };
+		F744E46724E84FD90002F6C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F744E46924E84FD90002F6C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F7300B4D24E2A54C00C7EE48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F744E45B24E84FD80002F6C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F744E46324E84FD80002F6C1 /* SwiftUI.framework in Frameworks */,
+				F744E46124E84FD80002F6C1 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F7300B4724E2A54C00C7EE48 = {
+			isa = PBXGroup;
+			children = (
+				F7300B5224E2A54C00C7EE48 /* Uniter */,
+				F744E46424E84FD80002F6C1 /* UniterWidget */,
+				F744E45F24E84FD80002F6C1 /* Frameworks */,
+				F7300B5124E2A54C00C7EE48 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F7300B5124E2A54C00C7EE48 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F7300B5024E2A54C00C7EE48 /* Uniter.app */,
+				F744E45E24E84FD80002F6C1 /* UniterWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F7300B5224E2A54C00C7EE48 /* Uniter */ = {
+			isa = PBXGroup;
+			children = (
+				F7300B5324E2A54C00C7EE48 /* UniterApp.swift */,
+				F7300B5524E2A54C00C7EE48 /* ContentView.swift */,
+				F744E45624E83F6B0002F6C1 /* MeetupView.swift */,
+				F744E45824E846D50002F6C1 /* ParticipantView.swift */,
+				F744E44E24E8262A0002F6C1 /* Meetup.swift */,
+				F744E45024E8269A0002F6C1 /* Participant.swift */,
+				F744E45424E828730002F6C1 /* DataLoader.swift */,
+				F7300B5724E2A54C00C7EE48 /* Assets.xcassets */,
+				F7300B5C24E2A54C00C7EE48 /* Info.plist */,
+				F7300B5924E2A54C00C7EE48 /* Preview Content */,
+			);
+			path = Uniter;
+			sourceTree = "<group>";
+		};
+		F7300B5924E2A54C00C7EE48 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F7300B5A24E2A54C00C7EE48 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F744E45F24E84FD80002F6C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F744E46024E84FD80002F6C1 /* WidgetKit.framework */,
+				F744E46224E84FD80002F6C1 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F744E46424E84FD80002F6C1 /* UniterWidget */ = {
+			isa = PBXGroup;
+			children = (
+				F744E46524E84FD80002F6C1 /* UniterWidget.swift */,
+				F744E46724E84FD90002F6C1 /* Assets.xcassets */,
+				F744E46924E84FD90002F6C1 /* Info.plist */,
+			);
+			path = UniterWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F7300B4F24E2A54C00C7EE48 /* Uniter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7300B7524E2A54D00C7EE48 /* Build configuration list for PBXNativeTarget "Uniter" */;
+			buildPhases = (
+				F7300B4C24E2A54C00C7EE48 /* Sources */,
+				F7300B4D24E2A54C00C7EE48 /* Frameworks */,
+				F7300B4E24E2A54C00C7EE48 /* Resources */,
+				F744E47024E84FD90002F6C1 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F744E46B24E84FD90002F6C1 /* PBXTargetDependency */,
+			);
+			name = Uniter;
+			productName = Uniter;
+			productReference = F7300B5024E2A54C00C7EE48 /* Uniter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F744E45D24E84FD80002F6C1 /* UniterWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F744E46D24E84FD90002F6C1 /* Build configuration list for PBXNativeTarget "UniterWidgetExtension" */;
+			buildPhases = (
+				F744E45A24E84FD80002F6C1 /* Sources */,
+				F744E45B24E84FD80002F6C1 /* Frameworks */,
+				F744E45C24E84FD80002F6C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UniterWidgetExtension;
+			productName = UniterWidgetExtension;
+			productReference = F744E45E24E84FD80002F6C1 /* UniterWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F7300B4824E2A54C00C7EE48 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					F7300B4F24E2A54C00C7EE48 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					F744E45D24E84FD80002F6C1 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+				};
+			};
+			buildConfigurationList = F7300B4B24E2A54C00C7EE48 /* Build configuration list for PBXProject "Uniter" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F7300B4724E2A54C00C7EE48;
+			productRefGroup = F7300B5124E2A54C00C7EE48 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F7300B4F24E2A54C00C7EE48 /* Uniter */,
+				F744E45D24E84FD80002F6C1 /* UniterWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F7300B4E24E2A54C00C7EE48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7300B5B24E2A54C00C7EE48 /* Preview Assets.xcassets in Resources */,
+				F7300B5824E2A54C00C7EE48 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F744E45C24E84FD80002F6C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7E6A5E724E859CB00879A16 /* Assets.xcassets in Resources */,
+				F744E46824E84FD90002F6C1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F7300B4C24E2A54C00C7EE48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F744E45524E828730002F6C1 /* DataLoader.swift in Sources */,
+				F7300B5624E2A54C00C7EE48 /* ContentView.swift in Sources */,
+				F744E45724E83F6B0002F6C1 /* MeetupView.swift in Sources */,
+				F7300B5424E2A54C00C7EE48 /* UniterApp.swift in Sources */,
+				F744E44F24E8262A0002F6C1 /* Meetup.swift in Sources */,
+				F744E45924E846D50002F6C1 /* ParticipantView.swift in Sources */,
+				F744E45124E8269A0002F6C1 /* Participant.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F744E45A24E84FD80002F6C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F744E46624E84FD80002F6C1 /* UniterWidget.swift in Sources */,
+				F7E6A5E424E8510E00879A16 /* Meetup.swift in Sources */,
+				F7E6A5E524E8525300879A16 /* DataLoader.swift in Sources */,
+				F7E6A5E624E858C600879A16 /* Participant.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F744E46B24E84FD90002F6C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F744E45D24E84FD80002F6C1 /* UniterWidgetExtension */;
+			targetProxy = F744E46A24E84FD90002F6C1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F7300B7324E2A54D00C7EE48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F7300B7424E2A54D00C7EE48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F7300B7624E2A54D00C7EE48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Uniter/Preview Content\"";
+				DEVELOPMENT_TEAM = 42L6GB6DU6;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Uniter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rdan.Uniter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F7300B7724E2A54D00C7EE48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Uniter/Preview Content\"";
+				DEVELOPMENT_TEAM = 42L6GB6DU6;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Uniter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rdan.Uniter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F744E46E24E84FD90002F6C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 42L6GB6DU6;
+				INFOPLIST_FILE = UniterWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rdan.Uniter.UniterWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F744E46F24E84FD90002F6C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 42L6GB6DU6;
+				INFOPLIST_FILE = UniterWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rdan.Uniter.UniterWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F7300B4B24E2A54C00C7EE48 /* Build configuration list for PBXProject "Uniter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7300B7324E2A54D00C7EE48 /* Debug */,
+				F7300B7424E2A54D00C7EE48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7300B7524E2A54D00C7EE48 /* Build configuration list for PBXNativeTarget "Uniter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7300B7624E2A54D00C7EE48 /* Debug */,
+				F7300B7724E2A54D00C7EE48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F744E46D24E84FD90002F6C1 /* Build configuration list for PBXNativeTarget "UniterWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F744E46E24E84FD90002F6C1 /* Debug */,
+				F744E46F24E84FD90002F6C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F7300B4824E2A54C00C7EE48 /* Project object */;
+}
