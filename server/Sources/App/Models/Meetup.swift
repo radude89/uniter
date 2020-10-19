@@ -9,27 +9,38 @@ import Vapor
 import Fluent
 import FluentSQLiteDriver
 
-final class Meetup: Model {
-    static let schema = "meetups"
+public final class Meetup: Model {
+    public static let schema = "meetups"
     
     @ID(key: .id)
-    var id: UUID?
+    public var id: UUID?
     
     @Field(key: "name")
-    var name: String
+    public var name: String
     
     @Field(key: "description")
-    var description: String
+    public var description: String
     
     @Timestamp(key: "created_at", on: .create)
-    var createdAt: Date?
+    public var createdAt: Date?
     
     @Siblings(through: MeetupParticipant.self, from: \.$meetup, to: \.$participant)
-    var participants: [Participant]
+    public var participants: [Participant]
+    
+    public init() {}
+    
+    public init(id: UUID? = nil, name: String, description: String, createdAt: Date? = nil) {
+        self.id = id
+        self.description = description
+        self.createdAt = createdAt
+    }
+    
 }
 
-struct CreateMeetup: Migration {
-    func prepare(on database: Database) -> EventLoopFuture<Void> {
+public struct CreateMeetup: Migration {
+    public init() {}
+    
+    public func prepare(on database: Database) -> EventLoopFuture<Void> {
         database.schema(Meetup.schema)
             .id()
             .field("name", .string)
@@ -38,7 +49,7 @@ struct CreateMeetup: Migration {
             .create()
     }
 
-    func revert(on database: Database) -> EventLoopFuture<Void> {
+    public func revert(on database: Database) -> EventLoopFuture<Void> {
         database.schema(Meetup.schema).delete()
     }
 }
